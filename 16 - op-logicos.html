@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <script>
+
+        // E(&&) - verdadeiro se todas as expressões forem verdadeiras
+        // OU(||) - verdadeiro se pelo umenos uma das expressões for verdadeira
+        // Negação (!) - Inverte o resultado da expressão de comparação
+
+        var estaChovendo = false
+        var guardaChuva = true
+        var doente = true
+
+        if(estaChovendo){
+            document.write("Não vou a feira <br>")
+        } else {
+            document.write("Vou a feira <br>")
+        }
+
+        document.write("</hr>")
+
+        if(estaChovendo && guardaChuva){
+            document.write("Vou a feira<br>")
+        }
+
+        document.write("</hr>")
+
+        if(estaChovendo || doente){
+            document.write("Não vou a feira <br>")
+        }
+
+        document.write("</hr>")
+
+        if(!estaChovendo){
+            document.write("Vou a feira <br>")
+        }
+        
+        document.write("</hr>")
+    </script>
+
+<body>
+
+</body>
+
+</html>

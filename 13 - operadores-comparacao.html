@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <script>
+        /*
+            igual(==) - verifica se os valores comparados são iguais
+            idêntico(===) - verifica se os valores comparados são iguais e do mesmo tipo
+            diferente(!=) - verifica se os valores comparados são diferentes
+            não idêntico(!==) - verifica se os valores comparados são diferentes e de tipos diferentes
+            menor(<) - verifica se o valor da esquerda é menor que o valor da direta
+            maior(>) - verifica se o valor da esquerda é maior que o valor da direta
+            menor igual(<=) - verifica se o valor da esquerda é menor ou igual que o valor da direta
+            maior igual(>=) - verifica se o valor da esquerda é maior ou igual que o valor da direta
+        */
+        document.write("Prática dos operados de comparação<br>")
+        document.write("<br><br>")
+
+        var idade1 = 15
+        var idade2 = 15
+        var idade3 = 14
+        var idade4 = 15
+        var nome = "Tiago"
+
+        if(idade1 == idade2){ 
+            document.write("Operador de (==) <br>")
+            document.write("A <strong>idade1</strong> é igual a <strong>idade2</strong>"+
+            " e Ambas valem: " + idade1 + " <br>")
+            document.write("<hr>")
+        }
+
+        if(idade1 === idade2){
+            document.write("Operador de (===) <br>")
+            document.write("A <strong>idade1</strong> é idêntica a <strong>idade2</strong> "+
+            +"e ambas valem:  " 
+            + idade1 + " <br> e seu tipo é: " 
+            + typeof(idade1) + " <br>")
+            document.write("<hr>")
+        }
+
+        if(idade3 != idade4){
+            document.write("Operador de (!=) <br>")
+            document.write("A <strong>idade3</strong> é diferente da <strong>idade4</strong> ambas valem: " 
+            + idade3 + " e" 
+            + idade4 + " respectivamente" 
+            + " <br>")
+            document.write("<hr>")
+        }
+
+        if(nome !== idade4){
+            document.write("Operador de (!==) <br>")
+            document.write("Valor do nome: " + nome + " <br> Valor da idade4: " 
+            + idade4 + " <br> <strong>São diferentes</strong> <br>")
+            document.write("Tipo do nome: " + typeof nome + " <br>Tipo da idade4: " 
+            + typeof idade4 + " <br> <strong>São diferentes</strong> <br>")
+            document.write("<hr>")
+        }
+
+        if(idade3 < idade4){
+            document.write("Operador de (<) <br>")
+            document.write("idade3 é menor que a idade 4 <br>")
+        }
+
+        if(idade4 > idade3){
+            document.write("Operador de (>) <br>")
+            document.write("idade3 é maior que a idade 4")
+        }
+        document.write("<hr>")
+    </script>
+
+<body>
+
+</body>
+
+</html>

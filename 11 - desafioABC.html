@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <script>
+        /*
+            Esse desafio consiste em trocar de posição as variáveis
+            A e B usando a variável C como auxiliar, não podendo
+            ser feito de forma hardcode.
+        */
+
+        var a = 10
+        var b = 5
+        var c = null
+
+        document.write("Valores antes da inversão" + "<br>")
+        document.write("Valor de A: " + a + "<br>")
+        document.write("Valor de B: " + b + "<br>")
+        document.write("Valor de C: " + c + "<br>")
+        document.write("<hr>")
+
+
+        c = a // c = 10
+        a = b // a = 5
+        b = c // b = 10
+        c = null
+
+        document.write("Valores depois da inversão" + "<br>")
+        document.write("Valor de A: " + a + "<br>")
+        document.write("Valor de B: " + b + "<br>")
+        document.write("Valor de C: " + c + "<br>")
+        document.write("<hr>")
+    </script>
+
+<body>
+
+</body>
+
+</html>
